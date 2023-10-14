@@ -1,0 +1,10 @@
+div{
+    border: 2px solid red;
+    border-radius: 2px;
+    padding: 40px;
+    
+}
+
+#text{
+    color: darkblue;
+}

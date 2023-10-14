@@ -1,0 +1,20 @@
+.box{
+    height: 150px;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    text-align: center;
+    color: gray;
+    margin-top: 100px;
+    position: relative;
+}
+.box2{
+    height: 130px;
+    width: 50%;
+    margin: auto;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    font-size: 30px;
+    margin-bottom: 30px;
+}

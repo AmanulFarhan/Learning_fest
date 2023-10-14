@@ -1,0 +1,9 @@
+#txt1{
+    text-decoration: overline;
+}
+#txt3{
+    text-decoration: underline;
+}
+#txt4{
+    text-decoration: underline overline;
+}
