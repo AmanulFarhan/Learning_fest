@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #screen{
+            width: 500px;
+            height: 400px;
+            border: solid 2px;
+            margin: 100px;
+            margin-left: 400px;
+            padding-left: 20px;
+            background-color: aqua;
+            
+        }.num{
+            width: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <h1 style="text-align: center;">EMI Calculator</h1>
+        <div class="num">
+            <h3>Enter Amount  :    <input id="amount" type="text" style="width: 300px;height: 30px;"></h3>
+        </div>
+        <div class="num" >
+            <h3>Enter the<br> Interest rate(%)  :     <input id="interest" type="text" style="width: 300px;height: 30px;"></h3>
+        </div>
+        <div class="num"  >
+            <h3>Enter no. of months  :     <input type="text" id="months" style="width: 300px;height: 30px;"></h3>
+        </div>
+        <div class="num"  >
+            <h3>EMI  :     <input type="text" id="emi_1" style="width: 300px;height: 30px;"></h3>
+        </div>
+        <div class="num">
+            <button onclick="emi()" style="width: 100px;height: 30px;border: solid 2px;margin-left: 180px;">CALCULATE</button>
+        </div>
+            
+
+    </div>
+
+
+    <script>
+        function emi(){
+            var amount_1=parseInt(document.getElementById("amount").value);
+            var interest_1=parseInt(document.getElementById("interest").value);
+            var months_1=parseInt(document.getElementById("months").value);
+            var int = amount_1*(interest_1/100);
+            var result = (amount_1+int)/months_1;
+            document.getElementById("emi_1").value=result;
+
+        }
+    </script>
+</body>
+</html>

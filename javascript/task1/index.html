@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 400px;
+            margin: 100px;
+            margin-left: 400px;
+            padding-left: 20px;
+            
+        }#display{
+            
+            margin-left:190px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="display">0</h1>
+        <button type="button" class="btn-roll-dice" onclick="roll()" style="background-color: black; color: white; border-color: black;margin-left: 150px;width: 100px;height: 40px;font-size: 15px;">Roll Dice</button>
+    </div>
+
+    <script>
+        function roll(){
+            var x=Math.floor(Math.random()*6)+1;
+            console.log(x);
+            document.getElementById("display").innerHTML = x;
+        }
+
+    </script>
+</body>
+</html>
